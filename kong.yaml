@@ -1,0 +1,41 @@
+_format_version: "2.0"
+_transform: true
+
+services:
+- name: media-service
+  url: https://mediaservice-courseonline-aslam.onrender.com
+  routes:
+  - name: media-routes
+    paths:
+    - /api/media
+
+- name: user-service
+  url: https://userservice-courseonline-aslam.onrender.com
+  routes:
+  - name: user-routes
+    paths:
+    - /api/user
+
+
+- name: course-service
+  url: https://courseservice-courseonline-aslam.onrender.com
+  routes:
+  - name: course-routes
+    paths:
+    - /api/courses
+
+    
+- name: order-service
+  url: https://orderservice-courseonline-aslam.onrender.com
+  routes:
+  - name: order-routes
+    paths:
+    - /api/orders
+
+    
+- name: transaction-service
+  url: https://transactionservice-courseonline-aslam.onrender.com
+  routes:
+  - name: transaction-routes
+    paths:
+    - /api/transactions
